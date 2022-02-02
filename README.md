@@ -13,6 +13,16 @@ The script will automatically save the desaturated image with the same name as t
 
 To recursively process an entire folder import the `process_folder` method.
 
+## Example
+
+Moon (before)
+
+![Moon](images/moon.jpg)
+
+Moon (after)
+
+![Moon desaturated](images/moon_desaturated.jpg)
+
 ## Work In Progress
 
 1. Add support for other image modes.
