@@ -1,5 +1,5 @@
 from PIL import Image
-
+import os
 
 def desaturate(data):
     R = data[::3]
@@ -32,3 +32,11 @@ def process(path):
         new_img.save(path.replace('.', '_desaturated.'))
     else:
         print('Unknown image mode')
+
+def process_folder(folder):
+    for file in os.listdir(folder):
+        path = os.path.join(folder, file)
+        if os.path.isfile(path):
+            process(path)
+        elif os.path.isdir(path):
+            process_folder(path)

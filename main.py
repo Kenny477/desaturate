@@ -1,6 +1,5 @@
 import os
-from desaturate import process
+from desaturate import process, process_folder
 
 img_dir = 'images/'
-for img in os.listdir(img_dir):
-    process(img_dir + img)
+process_folder(img_dir)

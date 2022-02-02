@@ -4,11 +4,13 @@ Python script to automatically desaturate an image. Currently only supports RGB 
 
 ## Usage
 
-Download desaturate.py and import the process method.
+Download [desaturate.py](desaturate.py) and import the process method.
+
 Syntax is as following:
-    process(image_path)
+`process(image_path)`
+
 The script will automatically save the desaturated image with the same name as the original except with a "_desaturated" appended to the end of the name.
 
-## TODO
+## Work In Progress
 
 1. Add support for other image modes.
